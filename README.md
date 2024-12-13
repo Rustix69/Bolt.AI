@@ -34,8 +34,8 @@ This project is a web application built using **Node.js** and **React** that lev
 ### Steps:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/llm-website-builder.git
-   cd llm-website-builder
+   git clone https://github.com/Rustix69/Bolt.AI.git
+   cd Bolt.AI
    ```
 
 2. Install dependencies:
