@@ -63,22 +63,8 @@ This project is a web application built using **Node.js** and **React** that lev
 3. The Node.js backend communicates with the LLM API to process the input and generate appropriate code snippets or templates.
 4. The generated code is sent back to the frontend, where users can preview and download it.
 
-## Screenshots
-(Include screenshots of your application here, such as the homepage, LLM interaction interface, and generated website preview.)
-
 ## Future Enhancements
 - Add support for more advanced website customization options.
 - Include additional LLM models for diverse outputs.
 - Provide hosting options for users to directly deploy their created websites.
 - Enable multi-language support for global accessibility.
-
-## Contributing
-Contributions are welcome! Feel free to fork the repository and submit pull requests. For major changes, please open an issue first to discuss your ideas.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-## Acknowledgments
-- Thanks to the developers of Node.js and React for their robust frameworks.
-- Special thanks to the LLM API provider for making this project possible.
-
