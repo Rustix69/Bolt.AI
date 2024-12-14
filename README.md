@@ -47,7 +47,7 @@ This project is a web application built using **Node.js** and **React** that lev
    Create a `.env` file in the root directory and add the following:
    ```env
    LLM_API_KEY=your_api_key_here
-   PORT=5000
+   PORT=3000
    ```
 
 4. Start the development server:
@@ -55,7 +55,11 @@ This project is a web application built using **Node.js** and **React** that lev
    npm run dev
    ```
 
-5. Access the application at `http://localhost:5000`.
+5. Access the application at `http://localhost:3000`.
+
+## Screenshots: 
+![image](https://github.com/user-attachments/assets/b602077a-9644-4f19-b1a7-bf5c6ee08726)
+
 
 ## How It Works
 1. The user interacts with the React-based frontend to specify requirements for the website.
