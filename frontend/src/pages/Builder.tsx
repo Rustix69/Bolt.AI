@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { StepsList } from '../components/StepsList';
 import { FileExplorer } from '../components/FileExplorer';
@@ -10,17 +10,9 @@ import axios from 'axios';
 import { BACKEND_URL } from '../config';
 import { parseXml } from '../steps';
 import { useWebContainer } from '../hooks/useWebContainer';
-import { FileNode } from '@webcontainer/api';
+import { WebContainer } from '@webcontainer/api';
 import { Loader } from '../components/Loader';
 
-const MOCK_FILE_CONTENT = `// This is a sample file content
-import React from 'react';
-
-function Component() {
-  return <div>Hello World</div>;
-}
-
-export default Component;`;
 
 export function Builder() {
   const location = useLocation();
@@ -69,7 +61,7 @@ export function Builder() {
               file.content = step.code;
             }
           } else {
-            /// in a folder
+            // in a folder
             let folder = currentFileStructure.find(x => x.path === currentFolder)
             if (!folder) {
               // create the folder
@@ -257,7 +249,7 @@ export function Builder() {
               {activeTab === 'code' ? (
                 <CodeEditor file={selectedFile} />
               ) : (
-                <PreviewFrame webContainer={webcontainer} files={files} />
+                <PreviewFrame webContainer={webcontainer as WebContainer} files={files} />
               )}
             </div>
           </div>
